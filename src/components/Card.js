@@ -76,14 +76,14 @@ export default function Card ({
                     console.log(cards[index].recall);
                     return (
                         <div className="card unselected">
-                            <p>{state} {cards[index].recall}</p>
+                            <p>Houve um erro!</p>
                         </div>
                     );
             }
         default:
             return (
                 <div className="card unselected">
-                    <p>{state} {cards[index].recall}</p>
+                    <p>Houve um erro!</p>
                 </div>
             );
             
