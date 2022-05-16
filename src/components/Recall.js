@@ -28,7 +28,7 @@ export default function Recall ({changePage, deck}) {
                     setRecalls={setRecalls}
                 />))}
             </main>
-            <Results cards={cards} recalls={recalls} />
+            <Results cards={cards} recalls={recalls} changePage={changePage} />
         </>
     );
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 import "../assets/styles/results.css";
 
-export default function Results ({cards, recalls}) {
+export default function Results ({cards, recalls, changePage}) {
 
     function recallSigns (recall) {
         switch (recall) {
@@ -67,6 +67,7 @@ export default function Results ({cards, recalls}) {
                 <div>
                     {recalls.map(recall => recallSigns(recall))}
                 </div>
+                <button onClick={() => changePage("home")}>REINICIAR RECALL</button>
             </footer>
         );
     }

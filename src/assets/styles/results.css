@@ -31,8 +31,25 @@
     font-size: 24px;
 }
 
+.recall-footer > button {
+    width: 160px;
+    height: 32px;
+    margin: 24px 0px;
+
+    background-color: var(--bgcolor);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    font-family: "Recursive";
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    text-align: center;
+}
+
 .long {
-    min-height: 170px;
+    min-height: 240px;
 }
 
 .final-results {
