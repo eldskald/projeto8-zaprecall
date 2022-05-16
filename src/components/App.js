@@ -1,21 +1,22 @@
 import React from "react";
 
 import Home from "./Home"
+import Recall from "./Recall";
 
 export default function App () {
 
     const [page, setPage] = React.useState("home")
 
-    if (page === "home") {
-        return (
-            <Home />
-        );
+    switch (page) {
+        case "home":
+            return (<Home changePage={setPage} />);
+        case "recall":
+            return (<Recall changePage={setPage} />);
+        default:
+            return (
+                <div className="error">
+                    Houve um erro!
+                </div>
+            );
     }
-
-    return (
-        <div>
-            <h1>AAAAAAAAAA</h1>
-            <h2>BBBBBBBB</h2>
-        </div>
-    );
 }

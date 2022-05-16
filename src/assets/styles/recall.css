@@ -1,0 +1,55 @@
+
+.recall-header {
+    position: absolute;
+    top: 0px;
+    left: 13%;
+    height: 96px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.recall-header > img {
+    margin: 0px 32px;
+}
+
+.recall-header > h1 {
+    font-family: "Righteous";
+    font-size: 36px;
+    font-weight: 400;
+    color: white;
+}
+
+.recall-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.recall-footer > p {
+    margin: 8px 0px;
+
+    font-family: "Recursive";
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.recall-footer > div {
+    margin: 0px 0px 8px 0px;
+
+    display: flex;
+
+    font-size: 24px;
+}
