@@ -1,0 +1,97 @@
+
+.card {
+    position: relative;
+    width: 300px;
+    margin: 16px 0px;
+
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.card > p {
+    margin: 0px 16px;
+
+    font-family: "Recursive";
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.card > ion-icon {
+    margin: 0px 16px;
+
+    font-size: 24px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.unselected {
+    min-height: 64px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.selected {
+    min-height: 128px;
+
+    background-color: var(--beige);
+    border: 1px solid var(--beige);
+}
+
+.selected > p {
+    position: absolute;
+    top: 16px;
+    left: 0px;
+
+    font-size: 16px;
+}
+
+.selected > img {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+
+    cursor: pointer;
+}
+
+.selected > div {
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
+    right: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selected > div > button {
+    width: 86px;
+    height: 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    font-family: "Recursive";
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--white);
+    text-align: center;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    text-decoration-thickness: 15%;
+}
